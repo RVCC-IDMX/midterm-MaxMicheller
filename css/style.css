@@ -4,46 +4,70 @@
 body{
     
     /* https://www.w3schools.com/css/css3_gradients.asp */
-    /* background-image: linear-gradient(#765729, #000000); */
+     background-image: linear-gradient(#765729, #000000); 
 
 
 }
 header{
+    /* https://smallbusiness.chron.com/add-image-css-file-51301.html */
+    background-image:url(/img/cave.jpg);
+    background-size:100%;
     border:5px solid #886664;
     text-align: center;
     padding: 1rem;
     margin: 5px;
     border-top-left-radius: 30px 30px;
     border-top-right-radius: 30px 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 5px 5px 3px rgba(0,0,0, 0.70);
 
     
 }
 
+span:lang(fr), :lang(it), :lang(is){
+    font-style: italic;
+}
+.character{
+    font-weight: bold;
+}
 
+h2{
+    /* https://www.w3schools.com/cssref/pr_text_text-decoration.asp */
+    text-decoration: underline ;
+}
 nav, main, aside, footer{
 
     /* https://stackoverflow.com/questions/8287447/create-a-white-rgba-css3 */
-    /* color:rgba(255,255,255, 0.3); */
-
+    background-color:rgba(255,255,255, 0.75); 
     border:5px solid #886664;
     text-align: center;
     padding: 1rem;
     margin: 5px;
-    box-shadow: inset 10px 10px 40px -15px #000000;
-    
+    box-shadow: inset 20px 20px 10px -10px rgba(0,0,0, 0.55);
+  
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color:#A52A2A;  
+}
+nav ul{
+    /* https://www.bitdegree.org/learn/css-list-style */
+    list-style-type: none;
+}
+nav ul li{
+    /* https://stackoverflow.com/questions/3790202/css-list-inline-is-not-listing-items-horizontally */
+    display: inline;
+}
+nav ul li:nth-child(n+4){
+list-style-position: inside;
+padding: 3px;
+border-right: solid 2px black;
 }
 
-nav{
-
-}
-
-main{
-
-}
-
-aside{
-
-}
 
 footer{
     border-bottom-left-radius: 30px 30px;

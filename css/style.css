@@ -138,3 +138,21 @@ footer{
     }
 
 }
+
+@media only screen and (min-width: 1024px) {
+    
+    body{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    hr{
+        display:none;
+    }
+
+    body header,nav, footer{
+        grid-column: 1/-1;
+    }
+
+
+}
